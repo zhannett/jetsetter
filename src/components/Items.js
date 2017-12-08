@@ -27,7 +27,7 @@ class Items extends Component {
           .map(item => (
             <Item
               key={item.id}
-              onToggle={() => onToggle(item)}
+              onToggle={onToggle}
               onRemove={() => onRemove(item)}
               item={item}
             />
